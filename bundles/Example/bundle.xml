@@ -2,7 +2,7 @@
 <bundle>
 	<!-- controllers exposed by this Bundle -->
 	<controllers>
-		<controller class="org.torweg.pulse.component.example.HelloWorldController"/>
+		<controller class="org.torweg.pulse.component.example.HelloWorldController" alwaysRun="post"/>
 	</controllers>
 
 	<!-- the implementations of org.torweg.pulse.site.content.Content exposed by this Bundle -->

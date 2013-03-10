@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.torweg.pulse.annotations.Action;
 import org.torweg.pulse.bundle.Controller;
 import org.torweg.pulse.annotations.Permission;
+import org.torweg.pulse.annotations.AnyAction;
 
 public class HelloWorldController extends Controller {
 
@@ -15,5 +16,9 @@ public class HelloWorldController extends Controller {
 	@Permission("greet")
 	public final void helloWorld() {
 		LOGGER.info("Hello World");
+	}
+	@AnyAction
+	public final void alwaysRun() {
+		LOGGER.info("I run always");
 	}
 }
